@@ -18,6 +18,7 @@ permalink: /
 
 ## [业余学习](/02_study)
 ### [Markdown基本语法](/02_study/0001_markdown.md)
+### [Java编年史](/02_study/0002_java.md)
 
 
 ## [关于作者](/03_author)
