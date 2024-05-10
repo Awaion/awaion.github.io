@@ -1,0 +1,583 @@
+# Java学习资料
+
+# 主要内容
+
+> [基础知识](#基础知识)  
+> [基础强化](#基础强化)  
+> [企业开发](#企业开发)  
+> [自我进阶](#自我进阶)  
+> [更多源码](#更多源码)  
+> [常用插件](#常用插件)  
+> [面试](#面试)
+
+----
+
+# 正文
+
+## 基础知识
+
+- 视频 [https://www.bilibili.com/video/BV1fh411y7R8](https://www.bilibili.com/video/BV1fh411y7R8)
+- 文档:菜鸟 [https://www.runoob.com/java/java-tutorial.html](https://www.runoob.com/java/java-tutorial.html)
+- 文档:廖雪峰 [https://www.liaoxuefeng.com/wiki/1252599548343744](https://www.liaoxuefeng.com/wiki/1252599548343744)
+- 文档:IDEA中文 [https://github.com/judasn/IntelliJ-IDEA-Tutorial](https://github.com/judasn/IntelliJ-IDEA-Tutorial)
+- 书籍:`Head First Java`
+
+## 基础强化
+
+- 视频:操作系统原理 [https://www.bilibili.com/video/BV1uW411f72n](https://www.bilibili.com/video/BV1uW411f72n)
+- 视频:计算机网络 [https://www.bilibili.com/video/BV1c4411d7jb](https://www.bilibili.com/video/BV1c4411d7jb)
+- 视频:MySQL入门 [https://www.bilibili.com/video/BV1Vy4y1z7EX](https://www.bilibili.com/video/BV1Vy4y1z7EX)
+- 文档:SQL教程 [https://www.runoob.com/sql/sql-tutorial.html](https://www.runoob.com/sql/sql-tutorial.html)
+- 文档:MySQL教程 [https://www.runoob.com/mysql/mysql-tutorial.html](https://www.runoob.com/mysql/mysql-tutorial.html)
+- 书籍:`图解HTTP`
+- 书籍:`图解TCP/IP`
+- 书籍:网络是怎样连接的
+
+## 企业开发
+
+- 视频:SSM框架 [https://www.bilibili.com/video/BV1Ya411S7aT/](https://www.bilibili.com/video/BV1Ya411S7aT/)
+- 视频:SSM框架 [https://www.bilibili.com/video/BV1AP411s7D7/](https://www.bilibili.com/video/BV1AP411s7D7/)
+- 视频:JavaWeb [https://www.bilibili.com/video/BV1Y7411K7zz](https://www.bilibili.com/video/BV1Y7411K7zz)
+- 视频:Spring5 [https://www.bilibili.com/video/BV1Vf4y127N5](https://www.bilibili.com/video/BV1Vf4y127N5)
+- 视频:SpringMVC [https://www.bilibili.com/video/BV1Ry4y1574R](https://www.bilibili.com/video/BV1Ry4y1574R)
+- 视频:SpringBoot2 [https://www.bilibili.com/video/BV19K4y1L7MT](https://www.bilibili.com/video/BV19K4y1L7MT)
+- 视频:SpringSecurity [https://www.bilibili.com/video/BV15a411A7kP](https://www.bilibili.com/video/BV15a411A7kP)
+- 视频:MyBatis [https://www.bilibili.com/video/BV1mW411M737](https://www.bilibili.com/video/BV1mW411M737)
+- 视频:MyBatisPlus [https://www.bilibili.com/video/BV1Ds411E76Y](https://www.bilibili.com/video/BV1Ds411E76Y)
+- 视频:Maven [https://www.bilibili.com/video/BV1TW411g7hP](https://www.bilibili.com/video/BV1TW411g7hP)
+- 视频:Git [https://www.bilibili.com/video/BV1vy4y1s7k6](https://www.bilibili.com/video/BV1vy4y1s7k6)
+- 视频:redis [https://www.bilibili.com/video/BV13R4y1v7sP](https://www.bilibili.com/video/BV13R4y1v7sP)
+- 视频:RabbitMQ [https://www.bilibili.com/video/BV1cf4y157sz/](https://www.bilibili.com/video/BV1cf4y157sz/)
+- 视频:Linux [https://www.bilibili.com/video/BV1Sv411r7vd](https://www.bilibili.com/video/BV1Sv411r7vd)
+- 视频:Nginx [https://www.bilibili.com/video/BV1yS4y1N76R/](https://www.bilibili.com/video/BV1yS4y1N76R/)
+- 视频:SpringCloud [https://www.bilibili.com/video/BV1gW421P7RD/](https://www.bilibili.com/video/BV1gW421P7RD/)
+
+## 自我进阶 
+- 文档:GitHub漫游指南 [https://github.phodal.com/](https://github.phodal.com/)
+- 文档:GitHub官方文档 [https://docs.github.com/cn](https://docs.github.com/cn)
+- 文档:Linux工具快速教程 [https://linuxtools-rst.readthedocs.io](https://linuxtools-rst.readthedocs.io)
+- 文档:Linux命令大全手册 [https://www.linuxcool.com/](https://www.linuxcool.com/)
+- 文档:腾讯云动手实验室：[https://cloud.tencent.com/developer/labs](https://cloud.tencent.com/developer/labs)
+- 文档:阿里云体验实验室：[https://developer.aliyun.com/adc/labs/](https://developer.aliyun.com/adc/labs/)
+- 文档:华为云沙箱实验室：[https://lab.huaweicloud.com/](https://lab.huaweicloud.com/)
+- 源码:酒店管理系统`tomcat` `mysql` `servlet` `jsp`实现 [https://github.com/misterchaos/HotelSystem](https://github.com/misterchaos/HotelSystem)
+- 源码:超市管理系统 [https://github.com/zhanglei-workspace/shopping-management-system](https://github.com/zhanglei-workspace/shopping-management-system)
+- 源码:SpringBoot电商系统 [https://github.com/gz-yami/mall4j](https://github.com/gz-yami/mall4j)
+- 源码:SpringBoot2.X的全栈电商系统 [https://github.com/newbee-ltd/newbee-mall](https://github.com/newbee-ltd/newbee-mall)
+- 源码:SpringBoot后端+Vue管理员前端+微信小程序用户前端+Vue用户移动端 [https://github.com/linlinjava/litemall](https://github.com/linlinjava/litemall)
+- 源码:SpringBoot实现的现代化社区系 [https://github.com/Qbian61/forum-java](https://github.com/Qbian61/forum-java)
+- 视频:北京大学软件工程 [https://www.bilibili.com/video/BV1Vt411V72G](https://www.bilibili.com/video/BV1Vt411V72G)
+- 视频:大连工业大学软件工程 [https://www.bilibili.com/video/BV1Ns41177VM](https://www.bilibili.com/video/BV1Ns41177VM)
+- 文档:浙大计算机软件工程 [https://github.com/QSCTech/zju-icicles](https://github.com/QSCTech/zju-icicles)
+- 视频:Java设计模式 [https://www.bilibili.com/video/BV1G4411c7N4](https://www.bilibili.com/video/BV1G4411c7N4)
+- 文档:设计模式菜鸟教程 [https://www.runoob.com/design-pattern/design-pattern-tutorial.html](https://www.runoob.com/design-pattern/design-pattern-tutorial.html)
+- 文档:图说设计模式 [https://design-patterns.readthedocs.io/zh_CN/latest/](https://design-patterns.readthedocs.io/zh_CN/latest/)
+- 文档:RabbitMQ中文文档 [http://rabbitmq.mr-ping.com/](http://rabbitmq.mr-ping.com/)
+- 文档:Nginx中文文档 [https://www.nginx.cn/doc/index.html](https://www.nginx.cn/doc/index.html)
+- 文档:Nginx配置在线生成 [https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN](https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN)
+- 视频:尚硅谷Netty教程 [https://www.bilibili.com/video/BV1DJ411m7NR](https://www.bilibili.com/video/BV1DJ411m7NR)
+- 文档:Netty4用户指南 [https://www.w3cschool.cn/netty_4_user_guide/](https://www.w3cschool.cn/netty_4_user_guide/)
+- 视频:Docker [https://www.bilibili.com/video/BV1gr4y1U7CY/](https://www.bilibili.com/video/BV1gr4y1U7CY/)
+- 视频:K8s+Docker+DevOps [https://www.bilibili.com/video/BV13Q4y1C7hS/](https://www.bilibili.com/video/BV13Q4y1C7hS/)
+- 文档:Docker 从入门到实践 [https://vuepress.mirror.docker-practice.com/](https://vuepress.mirror.docker-practice.com/)
+- 文档:Docker 教程 [https://www.runoob.com/docker/docker-tutorial.html](https://www.runoob.com/docker/docker-tutorial.html)
+- 文档:docs.docker [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
+- 文档:docker.org [https://www.docker.org.cn/](https://www.docker.org.cn/)
+- 文档:blog [https://www.docker.com/blog/](https://www.docker.com/blog/)
+- 文档:hub.docker [https://hub.docker.com/](https://hub.docker.com/)
+- 文档:mirrors.tencent [https://mirrors.tencent.com/#/index](https://mirrors.tencent.com/#/index)
+- 文档:cr aliyun [https://cr.console.aliyun.com/](https://cr.console.aliyun.com/)
+- 视频:Jenkins [https://www.bilibili.com/video/BV1bS4y1471A/](https://www.bilibili.com/video/BV1bS4y1471A/)
+- 文档:jenkins [https://www.jenkins.io/zh/](https://www.jenkins.io/zh/)
+- 文档:微信云托管 [https://cloud.weixin.qq.com/cloudrun](https://cloud.weixin.qq.com/cloudrun)
+- 文档:前端托管Webify [https://cloud.tencent.com/product/webify](https://cloud.tencent.com/product/webify)
+- 源码:秒杀系统 [https://github.com/qiurunze123/miaosha](https://github.com/qiurunze123/miaosha)
+- 源码:电商系统 [https://github.com/macrozheng/mall](https://github.com/macrozheng/mall)
+- 源码:Spring Cloud 实战项目 [https://github.com/paascloud/paascloud-master](https://github.com/paascloud/paascloud-master)
+- 源码:微服务商城系统 [https://github.com/macrozheng/mall-swarm](https://github.com/macrozheng/mall-swarm)
+- 源码:秒杀系统 [https://github.com/hfbin/Seckill](https://github.com/hfbin/Seckill)
+- 源码:低代码开发平台 [https://github.com/zhangdaiscott/jeecg-boot](https://github.com/zhangdaiscott/jeecg-boot)
+- 源码:面试刷题开源系统 [https://github.com/Jackson0714/PassJava-Platform](https://github.com/Jackson0714/PassJava-Platform)
+- 源码:软件工程师鱼皮 [https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd)
+- 源码:尚硅谷项目视频1 [https://www.bilibili.com/video/BV1dQ4y1A75e](https://www.bilibili.com/video/BV1dQ4y1A75e)
+- 源码:尚硅谷项目视频2 [https://www.bilibili.com/video/BV1bE411T7oZ](https://www.bilibili.com/video/BV1bE411T7oZ)
+- 视频:并发编程 [https://www.bilibili.com/video/BV1ar4y1x727/](https://www.bilibili.com/video/BV1ar4y1x727/)
+- 文档:Java并发知识点总结 [https://github.com/CL0610/Java-concurrency](https://github.com/CL0610/Java-concurrency)
+- 视频:JVM [https://www.bilibili.com/video/BV1Dz4y1A7FB/](https://www.bilibili.com/video/BV1Dz4y1A7FB/)
+- 文档:JVM底层原理最全知识总结 [https://github.com/doocs/jvm](https://github.com/doocs/jvm)
+- 文档:阿里云JVM实战 [https://developer.aliyun.com/graph/java/point/64](https://developer.aliyun.com/graph/java/point/64)
+- 文档:Arthas开源Java诊断工具 [https://github.com/alibaba/arthas](https://github.com/alibaba/arthas)
+- 文档:`istio`官方文档 [https://preliminary.istio.io/latest/zh](https://preliminary.istio.io/latest/zh)
+- 视频:DDD 实践教程 [https://www.bilibili.com/video/BV1Y341167Xp](https://www.bilibili.com/video/BV1Y341167Xp)
+- 文档:DDD 入门 [https://juejin.cn/post/7004002483601145863](https://juejin.cn/post/7004002483601145863)
+- 文档:DDD 编码实践 [https://juejin.cn/post/6844903903104860174](https://juejin.cn/post/6844903903104860174)
+- 视频:算法导论 [https://www.bilibili.com/video/av48922404](https://www.bilibili.com/video/av48922404)
+- 视频:现代操作系统 [https://www.bilibili.com/video/av9555596](https://www.bilibili.com/video/av9555596)
+- 视频:深入理解计算机系统 [https://www.bilibili.com/video/av31289365](https://www.bilibili.com/video/av31289365)
+- 视频:编译原理 [https://www.bilibili.com/video/av17649289](https://www.bilibili.com/video/av17649289)
+- 视频:计算机网络 [https://www.bilibili.com/video/BV1JV411t7ow](https://www.bilibili.com/video/BV1JV411t7ow)
+- 视频:计算机程序的构造和解释 [https://www.bilibili.com/video/av8515129](https://www.bilibili.com/video/av8515129)
+- 视频:数据库系统概论 [https://www.bilibili.com/video/BV1G54y1d7ZK](https://www.bilibili.com/video/BV1G54y1d7ZK)
+
+## 更多源码
+- https://how2j.cn/module/115.htm
+- https://how2j.cn/module/134.html
+- https://how2j.cn/module/156.html
+- https://github.com/macrozheng/mall-learningmall
+- https://github.com/gz-yami/mall4j
+- https://github.com/macrozheng/mall
+- https://github.com/newbee-ltd/newbee-mall
+- https://github.com/paascloud/paascloud-master
+- https://github.com/macrozheng/mall-swarm
+- https://github.com/YunaiV/onemall
+- https://github.com/linlinjava/litemall
+- https://github.com/Exrick/xmall
+- https://github.com/qiurunze123/miaosha
+- https://github.com/hfbin/Seckill
+- https://github.com/langhsu/mblog
+- https://github.com/halo-dev/halo
+- https://github.com/Qbian61/forum-java
+- https://github.com/lenve/vhr
+- https://github.com/cloudfavorites/favorites-web
+- https://github.com/codedrinker/community
+- https://github.com/yourkevin/NiterForum
+- https://github.com/lenve/VBlog
+- https://github.com/damoqiongqiu/NiceFish
+- https://github.com/ZHENFENG13/My-Blog
+- https://github.com/ZHENFENG13/My-Blog-layui
+- https://github.com/88250/symphony
+- https://github.com/wxiaoqi/Spring-Cloud-Admin
+- https://github.com/tomsun28/bootshiro
+- https://github.com/72crm/72crm-java
+- https://github.com/elunez/eladmin
+- https://gitee.com/log4j/pig
+- https://github.com/wuyouzhuguli/FEBS-Shiro
+- https://github.com/Heeexy/SpringBoot-Shiro-Vue
+- https://github.com/ZeroWdd/studentmanager
+- https://github.com/jishenghua/jshERP
+- https://github.com/misterchaos/HotelSystem
+- https://github.com/2014shijina2014/open-capacity-platform
+- https://github.com/zhangdaiscott/jeecg-boot
+- https://github.com/mindskip/xzs
+- https://github.com/Jackson0714/PassJava-Platform
+- https://github.com/kekingcn/kkFileView
+- https://github.com/baomidou/dynamic-datasource-spring-boot-starter
+- https://github.com/373675032/moti-cloud
+- https://github.com/qiurunze123/threadandjuc
+- https://github.com/proxyee-down-org/proxyee-down
+- https://github.com/sfturing/hosp_order
+- https://how2j.cn/module/170.html
+- https://how2j.cn/module/176.html
+
+## 常用插件
+
+- Background Image Plus +
+- 描述：给编辑器设置背景图片（小姐姐图片）
+- 官网：https://plugins.jetbrains.com/plugin/11247-background-image-plus-
+----
+- Chinese Language Pack
+- 描述：中文支持
+- 官网：https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----
+----
+- Translation
+- 描述：翻译插件，鼠标选中文本，点击右键即可自动翻译成多国语言。
+- 官网：https://plugins.jetbrains.com/plugin/8579-translation/
+----
+- Key Promoter X
+- 描述：快捷键提示插件。当你执行鼠标操作时，如果该操作可被快捷键代替，会给出提示，帮助你自然形成使用快捷键的习惯，告别死记硬背。
+- 官网：https://plugins.jetbrains.com/plugin/9792-key-promoter-x/
+----
+- Rainbow Brackets
+- 描述：给括号添加彩虹色，使开发者通过颜色区分括号嵌套层级，便于阅读
+- 官网：https://plugins.jetbrains.com/plugin/10080-rainbow-brackets/
+----
+- CodeGlance
+- 描述：在编辑器右侧生成代码小地图，可以拖拽小地图光标快速定位代码，阅读行数很多的代码文件时非常实用。
+- 官网：https://plugins.jetbrains.com/plugin/7275-codeglance/
+----
+- WakaTime
+- 描述：代码统计和跟踪插件
+- 官网：https://plugins.jetbrains.com/plugin/7425-wakatime
+----
+- Statistic
+- 描述：代码统计
+- 官网：https://plugins.jetbrains.com/plugin/4509-statistic
+----
+- String Manipulation
+- 描述：字符串快捷处理
+- 官网：https://plugins.jetbrains.com/plugin/2162-string-manipulation
+----
+- Tabnine AI Code Completion
+- 描述：使用 AI 去自动提示和补全代码，比 IDEA 自带的代码补全更加智能化
+- 官网：https://plugins.jetbrains.com/plugin/12798-tabnine-ai-code-completion-js-java-python-ts-rust-go-php--more
+----
+- GsonFormatPlus
+- 描述：根据 json 生成对象
+- 官网：https://plugins.jetbrains.com/plugin/14949-gsonformatplus
+----
+- JUnitGenerator V2.0
+- 描述：自动生成单元测试
+- 官网：https://plugins.jetbrains.com/plugin/3064-junitgenerator-v2-0
+----
+- RestfulTool
+- 描述：辅助 web 开发的工具集
+- 官网：https://plugins.jetbrains.com/plugin/14280-restfultool
+----
+- SequenceDiagram
+- 描述：自动生成方法调用时序图
+- 官网：https://plugins.jetbrains.com/plugin/8286-sequencediagram
+----
+- CheckStyle-IDEA
+- 描述：自动检查 Java 代码规范
+- 官网：https://plugins.jetbrains.com/plugin/1065-checkstyle-idea
+----
+- Alibaba Java Coding Guidelines
+- 描述：代码规范检查插件
+- 官网：https://plugins.jetbrains.com/plugin/10046-alibaba-java-coding-guidelines
+----
+- SonarLint
+- 描述：帮助你发现和修复代码的错误和漏洞
+- 官网：https://plugins.jetbrains.com/plugin/7973-sonarlint
+----
+- MybatisX
+- 描述：MyBatis 增强插件，支持自动生成 entity、mapper、service 等常用操作的代码，优化体验
+- 官网：https://plugins.jetbrains.com/plugin/10119-mybatisx
+----
+- Extra Icons
+- 描述：图标美化插件，支持更多文件类型
+- 官网：https://plugins.jetbrains.com/plugin/11058-extra-icons
+----
+- Chinese Language Pack
+- 描述：中文支持
+- 官网：https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----
+----
+- Grep Console
+- 描述：自定义设置控制台输出颜色
+- 官网：https://plugins.jetbrains.com/idea/plugin/7125-grep-console
+----
+- Material Theme UI
+- 描述：美观的主题
+- 官网：https://plugins.jetbrains.com/plugin/8006-material-theme-ui
+----
+- Nyan Progress Bar
+- 描述：进度条美化
+- 官网：https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar
+----
+- activate-power-mode
+- 描述：打字特效
+- 官网：https://plugins.jetbrains.com/plugin/8330-activate-power-mode
+----
+- Power Mode II
+- 描述：打字特效插件升级版
+- 官网：https://plugins.jetbrains.com/plugin/8251-power-mode-ii
+----
+- Rainbow Brackets
+- 描述：给括号添加彩虹色，使开发者通过颜色区分括号嵌套层级，便于阅读
+- 官网：https://plugins.jetbrains.com/plugin/10080-rainbow-brackets/
+----
+- Background Image Plus +
+- 描述：给编辑器设置背景图片
+- 官网：https://plugins.jetbrains.com/plugin/11247-background-image-plus-
+----
+- Codota AI Autocomplete for Java and JavaScript
+- 描述：使用 AI 去自动提示和补全代码，比 IDEA 自带的代码补全更加智能化
+- 官网：https://plugins.jetbrains.com/plugin/7638-codota-ai-autocomplete-for-java-and-javascript
+----
+- Tabnine AI Code Completion
+- 描述：使用 AI 来自动提示和补全代码，比 IDEA 自带的代码补全更加智能化
+- 官网：https://plugins.jetbrains.com/plugin/12798-tabnine-ai-code-completion-js-java-python-ts-rust-go-php--more
+----
+- UUID Generator
+- 描述：生成随机的 UUID
+- 官网：https://plugins.jetbrains.com/plugin/8320-uuid-generator
+----
+- Randomness
+- 描述：生成随机值
+- 官网：https://plugins.jetbrains.com/plugin/9836-randomness
+----
+- .ignore
+- 描述：生成不同语言的版本控制忽略文件
+- 官网：https://plugins.jetbrains.com/plugin/7495--ignore
+----
+- Auto filling Java call arguments
+- 描述：通过快捷键自动补全函数的调用参数
+- 官网：https://plugins.jetbrains.com/plugin/8638-auto-filling-java-call-arguments/
+----
+- GenerateAllSetter
+- 描述：快速生成调用对象 setter 方法的代码
+- 官网：https://plugins.jetbrains.com/plugin/9360-generateallsetter
+----
+- GenerateSerialVersionUID
+- 描述：一键为实现 Serializable 接口的类生成 SerialVersionUID
+- 官网：https://plugins.jetbrains.com/plugin/185-generateserialversionuid/
+----
+- GsonFormatPlus
+- 描述：根据 json 生成对象
+- 官网：https://plugins.jetbrains.com/plugin/14949-gsonformatplus
+----
+- Lombok
+- 描述：配合 Lombok 依赖及注解使用，能够大大减少 Java 对象的代码量。IDEA 已自带，无需安装。
+- 官网：https://plugins.jetbrains.com/plugin/6317-lombok/
+----
+- Easy Code
+- 描述：根据数据库表生成 Java entity、dao、mapper、service、controller 等代码
+- 官网：https://plugins.jetbrains.com/plugin/10954-easy-code
+----
+- Easy Javadoc
+- 描述：快速生成 Javadoc 文档
+- 官网：https://plugins.jetbrains.com/plugin/12977-easy-javadoc
+----
+- JavaDoc
+- 描述：生成 Javadoc 文档
+- 官网：https://plugins.jetbrains.com/plugin/7157-javadoc
+----
+- Json2Pojo
+- 描述：根据 JSON 生成 POJO，根据 POJO 生成 JSON
+- 官网：https://plugins.jetbrains.com/plugin/8533-json2pojo
+----
+- JUnitGenerator V2.0
+- 描述：自动生成单元测试
+- 官网：https://plugins.jetbrains.com/plugin/3064-junitgenerator-v2-0
+----
+- Jindent - Source Code Formatter
+- 描述：根据自定义模板来生成 javadoc 注释
+- 官网：https://plugins.jetbrains.com/plugin/8309-jindent--source-code-formatter
+----
+- MybatisX
+- 描述：MyBatis 增强插件，支持自动生成 entity、mapper、service 等常用操作的代码，优化体验
+- 官网：https://plugins.jetbrains.com/plugin/10119-mybatisx
+----
+- MyBatisCodeHelperPro
+- 描述：MyBatis 增强插件，支持自动生成 entity、mapper、service 等常用操作的代码（收费）
+- 官网：https://plugins.jetbrains.com/plugin/9837-mybatiscodehelperpro
+----
+- Call Graph
+- 描述：生成调用关系图，便于查看源码
+- 官网：https://plugins.jetbrains.com/plugin/12304-call-graph
+----
+- Jump to Line
+- 描述：支持跳转到任意行进行调试
+- 官网：https://plugins.jetbrains.com/plugin/14877-jump-to-line
+----
+- SequenceDiagram
+- 描述：自动生成方法调用时序图
+- 官网：https://plugins.jetbrains.com/plugin/8286-sequencediagram
+----
+- jclasslib Bytecode Viewer
+- 描述：字节码查看器
+- 官网：https://plugins.jetbrains.com/plugin/9248-jclasslib-bytecode-viewer
+----
+- BrowseWordAtCaret
+- 描述： 快速在相同单词间进行跳转
+- 官网：https://plugins.jetbrains.com/plugin/201-browsewordatcaret
+----
+- CodeGlance
+- 描述：在编辑器右侧生成代码小地图，可以拖拽小地图光标快速定位代码，阅读行数很多的代码文件时非常实用。
+- 官网：https://plugins.jetbrains.com/plugin/7275-codeglance/
+----
+- CheckStyle-IDEA
+- 描述：自动检查 Java 代码规范
+- 官网：https://plugins.jetbrains.com/plugin/1065-checkstyle-idea
+----
+- Alibaba Java Coding Guidelines
+- 描述：代码规范检查插件
+- 官网：https://plugins.jetbrains.com/plugin/10046-alibaba-java-coding-guidelines
+----
+- SonarLint
+- 描述：帮助你发现和修复代码的错误和漏洞
+- 官网：https://plugins.jetbrains.com/plugin/7973-sonarlint
+----
+- FindBugs-IDEA
+- 描述：帮你找出代码中潜藏的 Bug
+- 官网：https://plugins.jetbrains.com/plugin/3847-findbugs-idea
+----
+- MetricsReloaded
+- 描述：代码复杂度分析
+- 官网：https://plugins.jetbrains.com/plugin/93?pr=idea
+----
+- CamelCase
+- 描述：快速字符串格式转换工具，如驼峰式
+- 官网：https://plugins.jetbrains.com/plugin/7160-camelcase
+----
+- Json Parser
+- 描述：验证和格式化 Json 字符串的工具
+- 官网：https://plugins.jetbrains.com/plugin/10650-json-parser
+----
+- Properties to YAML Converter
+- 描述：把 Properties 文件的格式转为 YAML 格式
+- 官网：https://plugins.jetbrains.com/plugin/8000-properties-to-yaml-converter
+----
+- String Manipulation
+- 描述：字符串快捷处理
+- 官网：https://plugins.jetbrains.com/plugin/2162-string-manipulation
+----
+- WakaTime
+- 描述：代码统计和跟踪插件
+- 官网：https://plugins.jetbrains.com/plugin/7425-wakatime
+----
+- Statistic
+- 描述：代码统计
+- 官网：https://plugins.jetbrains.com/plugin/4509-statistic
+----
+- OnlineSearch
+- 描述：选择文本后支持不同搜索引擎进行搜索
+- 官网：https://plugins.jetbrains.com/plugin/8298-onlinesearch/
+----
+- CodeSearch
+- 描述：快捷地打开搜索引擎进行搜索
+- 官网：https://plugins.jetbrains.com/plugin/12578-codesearch
+----
+- Leetcode Editor
+- 描述：在 IDEA 里刷算法题
+- 官网：https://plugins.jetbrains.com/plugin/12132-leetcode-editor
+----
+- File Watchers
+- 描述：监听文件，当其发生变化时自动执行命令
+- 官网：https://plugins.jetbrains.com/plugin/7177-file-watchers
+----
+- PlantUML integration
+- 描述：UML 建模工具，只需简单的代码就能画出复杂的 UML 类图
+- 官网：https://plugins.jetbrains.com/plugin/7017-plantuml-integration
+----
+- Bytecode Editor
+- 描述：字节码编辑工具
+- 官网：https://plugins.jetbrains.com/plugin/8461-bytecode-editor
+----
+- Alibaba Cloud Toolkit
+- 描述：阿里云工具集
+- 官网：https://plugins.jetbrains.com/plugin/11386-alibaba-cloud-toolkit
+----
+- Tencent Cloud Toolkit
+- 描述：腾讯云工具集
+- 官网：https://plugins.jetbrains.com/plugin/15653-tencent-cloud-toolkit
+----
+- EduTools
+- 描述：面向教育者，允许创建、分享和加入练习
+- 官网：https://plugins.jetbrains.com/plugin/10081-edutools
+----
+- IDE Features Trainer
+- 描述：IntelliJ IDEA 官方出的学习辅助插件
+- 官网：https://plugins.jetbrains.com/plugin/8554-ide-features-trainer
+----
+- JRebel Plugin
+- 描述：项目热更新，提高效率（可惜要收费）
+- 官网：https://plugins.jetbrains.com/plugin/4441-jrebel-and-xrebel-for-intellij
+----
+- Key Promoter X
+- 描述：快捷键提示插件。当你执行鼠标操作时，如果该操作可被快捷键代替，会给出提示，帮助你自然形成使用快捷键的习惯，告别死记硬背。
+- 官网：https://plugins.jetbrains.com/plugin/9792-key-promoter-x/
+----
+- Translation
+- 描述：翻译插件，鼠标选中文本，点击右键即可自动翻译成多国语言。
+- 官网：https://plugins.jetbrains.com/plugin/8579-translation/
+----
+- idea_seat
+- 描述：自动提醒，防止你久坐不动
+- 官网：https://github.com/s-unscrupulous/idea_seat
+----
+- RestfulTool
+- 描述：辅助 web 开发的工具集
+- 官网：https://plugins.jetbrains.com/plugin/14280-restfultool
+----
+- Multirun
+- 描述：同时启动多应用
+- 官网：https://plugins.jetbrains.com/plugin/7248-multirun
+----
+- Free Mybatis Plugin
+- 描述：MyBatis 增强插件，支持 mapper => xml 的跳转、代码生成等功能
+- 官网：https://plugins.jetbrains.com/plugin/8321-free-mybatis-plugin
+----
+- MyBatis Log Plugin
+- 描述：MyBatis SQL 提取和格式化输出
+- 官网：https://plugins.jetbrains.com/plugin/10065-mybatis-log-plugin
+----
+- Maven Helper
+- 描述：Maven 辅助插件
+- 官网：https://plugins.jetbrains.com/plugin/7179-maven-helper
+----
+- Gradle View
+- 描述：Gradle 项目管理工具的扩展
+- 官网：https://plugins.jetbrains.com/plugin/7150-gradle-view
+----
+- Arthas Idea
+- 描述： Arthas 命令生成插件。Arthas 是阿里开源的 Java 在线诊断工具，该插件可以自动生成 Arthas 在线 Java 代码诊断命令，不用再到官网翻文档拼命令啦！
+- 官网：https://plugins.jetbrains.com/plugin/13581-arthas-idea/
+----
+- GitToolBox
+- 描述： Git 增强插件。在自带的 Git 功能之上，新增了查看 Git 状态、自动拉取代码、提交通知等功能。最好用的是可以查看到每一行代码的最近一次提交信息。
+- 官网：https://plugins.jetbrains.com/plugin/7499-gittoolbox/
+----
+- BashSupport
+- 描述：支持 Bash 脚本文件的高亮和提示等
+- 官网：https://plugins.jetbrains.com/plugin/4230-bashsupport
+----
+- Git Flow Integration
+- 描述：Git Flow 的图形界面操作
+- 官网：https://plugins.jetbrains.com/plugin/7315-git-flow-integration
+----
+- Gitee
+- 描述：开源中国的码云插件
+- 官网：https://plugins.jetbrains.com/plugin/8383-gitee
+----
+- Drools
+- 描述：规则引擎的扩展
+- 官网：https://plugins.jetbrains.com/plugin/16871-drools
+----
+- EnvFile
+- 描述：对多环境配置文件的支持
+- 官网：https://plugins.jetbrains.com/plugin/7861-envfile
+----
+- Kubernetes
+- 描述：容器管理的扩展
+- 官网：https://plugins.jetbrains.com/plugin/10485-kubernetes
+----
+- Vue.js
+- 描述：Vue.js 前端框架的扩展
+- 官网：https://plugins.jetbrains.com/plugin/9442-vue-js
+----
+- Scala
+- 描述：Scala 语言的扩展
+- 官网：https://plugins.jetbrains.com/plugin/1347-scala
+----
+- Zookeeper
+- 描述：Zookeeper 中间件的扩展
+- 官网：https://plugins.jetbrains.com/plugin/7364-zookeeper
+----
+- Jms messenger
+- 描述：对 Java 消息服务的扩展
+- 官网：https://plugins.jetbrains.com/plugin/10949-jms-messenger
+----
+- MapStruct Support
+- 描述：对 MapStruct 对象转换的支持
+- 官网：https://plugins.jetbrains.com/plugin/10036-mapstruct-support
+----
+- Big Data Tools
+- 描述：提供了 HDFS 等大数据框架的工具集
+- 官网：https://plugins.jetbrains.com/plugin/12494-big-data-tools
+----
+- CSV
+- 描述：支持 CSV 文件的高亮和提示等
+- 官网：https://plugins.jetbrains.com/plugin/10037-csv
+----
+- Ideolog
+- 描述：识别和格式化 log 日志文件
+- 官网：https://plugins.jetbrains.com/plugin/9746-ideolog
+----
+- Toml
+- 描述：支持 toml 文件的高亮和提示等
+- 官网：https://plugins.jetbrains.com/plugin/8195-toml
+----
+- .env files support
+- 描述：支持 .env 文件的高亮和提示等
+- 官网：https://plugins.jetbrains.com/plugin/9525--env-files-support
+
+## 面试
+
+- 文档:编程导航面经汇总 [https://yuyuanweb.feishu.cn/wiki/PLHrwcEPCiJcxXk7Ki4csRoJn2f](https://yuyuanweb.feishu.cn/wiki/PLHrwcEPCiJcxXk7Ki4csRoJn2f)
+- 文档:编程导航精选面试题汇总 [https://yuyuanweb.feishu.cn/wiki/CmFywXs0Oi0MS9kU3yocJugFn2e](https://yuyuanweb.feishu.cn/wiki/CmFywXs0Oi0MS9kU3yocJugFn2e)
+- 文档:CS-Notes [http://www.cyc2018.xyz/](http://www.cyc2018.xyz/)
+- 文档:阿里 Java 技术图谱 [https://developer.aliyun.com/graph/java](https://developer.aliyun.com/graph/java)
+- 文档:实习僧 [https://www.shixiseng.com/](https://www.shixiseng.com/)
+
+[返回顶部](#主要内容)
+
