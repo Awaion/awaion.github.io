@@ -46,127 +46,127 @@
 
 #### 项目启动
 
-![IntelliJ IDEA](./images/0003_java_modules/001.png)
+![IntelliJ IDEA](./images/0004_ide_idea/001.png)
 
 去除了不需要的文件后,就剩下如图文件,模块化文件夹和`pom.xml`文件,每个模块化文件包含`src`文件夹和`pom.xml`文件.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/002.png)
+![IntelliJ IDEA](./images/0004_ide_idea/002.png)
 
 项目打开后在IDE上显示如上图,项目结构规范清晰.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/003.png)
+![IntelliJ IDEA](./images/0004_ide_idea/003.png)
 
 打开项目结构(Project Structure),我们看到Project栏已经自动配置好了.无需改动,规范带来便捷.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/004.png)
+![IntelliJ IDEA](./images/0004_ide_idea/004.png)
 
 模块(Module),源文件也自动标记了,自动标记源于约定好的文件夹命名,按照规范来命名能够给开发者节省很多配置工作.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/005.png)
+![IntelliJ IDEA](./images/0004_ide_idea/005.png)
 
 自动配置了模块编译输出路径.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/006.png)
+![IntelliJ IDEA](./images/0004_ide_idea/006.png)
 
 自动引入了项目pom.xml中记录的依赖
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/007.png)
+![IntelliJ IDEA](./images/0004_ide_idea/007.png)
 
 Libraries也自动引入了项目pom.xml中记录的依赖
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/008.png)
+![IntelliJ IDEA](./images/0004_ide_idea/008.png)
 
 自动识别了项目特征,自动识别也是源于规范的文件命名
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/009.png)
+![IntelliJ IDEA](./images/0004_ide_idea/009.png)
 
 项目成品(Artifacts)中自动添加了4个成品文件,2个是压缩包(war),2个是解压包(exploded).
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/010.png)
+![IntelliJ IDEA](./images/0004_ide_idea/010.png)
 
 项目SDK是上个项目配置的SDK,不影响项目运行,编译环境下可能会使用.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/011.png)
+![IntelliJ IDEA](./images/0004_ide_idea/011.png)
 
 项目依赖也是上个项目配置的项目依赖,不影响运行,编译环境下可能会使用.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/012.png)
+![IntelliJ IDEA](./images/0004_ide_idea/012.png)
 
 添加Tomcat服务器,自动提示要添加项目成品包.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/013.png)
+![IntelliJ IDEA](./images/0004_ide_idea/013.png)
 
 选择项目成品解压包,并配置访问路径为根路径,然后点击Apply
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/014.png)
+![IntelliJ IDEA](./images/0004_ide_idea/014.png)
 
 改下服务启动后,浏览器访问路径,无需手动输入网址.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/015.png)
+![IntelliJ IDEA](./images/0004_ide_idea/015.png)
 
 有两个web项目木,需要再配置一台Tomcat服务器,选择项目成品解压包,并配置访问路径为根路径,然后点击Apply
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/016.png)
+![IntelliJ IDEA](./images/0004_ide_idea/016.png)
 
 再改下服务启动后,浏览器访问路径,以及端口号不要和上一个服务器重复.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/017.png)
+![IntelliJ IDEA](./images/0004_ide_idea/017.png)
 
 项目需要访问数据库,就需要初始化数据库表.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/018.png)
+![IntelliJ IDEA](./images/0004_ide_idea/018.png)
 
 启动服务器后,看服务器输出日志,显示部署成功
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/019.png)
+![IntelliJ IDEA](./images/0004_ide_idea/019.png)
 
 自动打开浏览器后,正常访问.
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/020.png)
+![IntelliJ IDEA](./images/0004_ide_idea/020.png)
 
 启动另一台服务器后,看服务器输出日志,显示部署成功
 
 ----
 
-![IntelliJ IDEA](./images/0003_java_modules/021.png)
+![IntelliJ IDEA](./images/0004_ide_idea/021.png)
 
 自动打开浏览器后,正常访问.
 
