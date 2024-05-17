@@ -101,7 +101,7 @@ Controller 代码中将请求转发到 Mock 服务器,这是为了节省时间�
 
 ## 题外话
 
-Vue 本质是 JavaScript 框架, 可以直接在 html(Hyper Text Markup Language) 文件的 <script> 中运行, 更多的是在 Node.js 上开发, Node.js
+Vue 本质是 JavaScript 框架, 可以直接在 html(Hyper Text Markup Language) 文件的 `<script>` 中运行, 更多的是在 Node.js 上开发, Node.js
 是一个基于 Chrome V8 引擎的 JavaScript 运行环境.
 
 [Github 源码](https://github.com/Awaion/tools/tree/master/demo005)
