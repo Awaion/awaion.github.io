@@ -1,4 +1,4 @@
-# Spring Boot + MyBatis-Plus
+# Spring Boot + Vue
 
 # 主要内容
 
