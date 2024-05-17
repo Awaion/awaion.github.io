@@ -1,4 +1,4 @@
-# SSM框架项目
+# Spring + Spring MVC + MyBatis
 
 # 主要内容
 

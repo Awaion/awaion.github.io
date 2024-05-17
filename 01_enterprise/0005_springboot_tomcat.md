@@ -1,4 +1,4 @@
-# 外部`Tomcat`启动`SpringBoot`项目
+# Spring Boot + 外部 Tomcat
 
 # 主要内容
 
