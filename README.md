@@ -20,6 +20,7 @@ permalink: /
 ### [外部`Tomcat`启动`SpringBoot`项目](/01_enterprise/0005_springboot_tomcat.md)
 ### [`SpringBoot`+`Knife4j`](/01_enterprise/0006_springboot_knife4j.md)
 ### [Spring Boot + Spring Data JPA](/01_enterprise/0007_springboot_springdatajpa.md)
+### [Spring Boot + MyBatis-Plus](/01_enterprise/0008_springboot_mybatisplus.md)
 
 ## 业余学习
 ### [Markdown基本语法](/02_study/0001_markdown.md)
