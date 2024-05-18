@@ -25,6 +25,7 @@ permalink: /
 ### [Spring Boot + Vue](/01_enterprise/0009_springboot_vue.md)
 ### [Spring Boot + React](/01_enterprise/0010_springboot_react.md)
 ### [React 项目运行](/01_enterprise/0011_js_react.md)
+### [Vue 项目运行](/01_enterprise/0012_js_vue.md)
 
 ## 业余学习
 
