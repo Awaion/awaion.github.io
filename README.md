@@ -40,7 +40,7 @@ permalink: /
 
 ## 关于作者
 
-### [常用网页](/02_study/0001_web_page.md)
+### [常用网页](/03_author/0001_web_page.md)
 
 ## 许可
 [MIT License](https://opensource.org/license/mit)
