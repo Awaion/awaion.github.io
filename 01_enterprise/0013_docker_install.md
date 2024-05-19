@@ -111,6 +111,52 @@ sudo docker run hello-world
 
 ----
 
+Docker官方镜像库,是在国外,经常会有连接问题,我们配置国内镜像源,以减少网络问题.
+
+![IntelliJ IDEA](./images/0013_docker_install/012.png)
+
+```shell
+vim /etc/docker/daemon.json
+```
+
+打开 /etc/docker/daemon.json 配置文件.
+
+----
+
+![IntelliJ IDEA](./images/0013_docker_install/013.png)
+
+```shell
+{
+   "registry-mirrors": [
+   "https://mirror.ccs.tencentyun.com"
+  ]
+}
+```
+
+按 i 切换至编辑模式,添加镜像源并保存.
+
+----
+
+![IntelliJ IDEA](./images/0013_docker_install/014.png)
+
+```shell
+sudo systemctl restart docker
+```
+
+重启 Docker 使配置生效
+
+----
+
+![IntelliJ IDEA](./images/0013_docker_install/015.png)
+
+```shell
+sudo docker info
+```
+
+查看镜像源是否配置成功
+
+----
+
 以上就是本文核心内容.
 
 ## 题外话
