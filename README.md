@@ -28,6 +28,7 @@ permalink: /
 ### [Vue 项目运行](/01_enterprise/0012_js_vue.md)
 ### [Docker 安装](/01_enterprise/0013_docker_install.md)
 ### [Docker 常用镜像](/01_enterprise/0014_docker_software.md)
+### [KubeSphere 安装](/01_enterprise/0015_kubesphere.md)
 
 ## 业余学习
 
@@ -36,6 +37,7 @@ permalink: /
 ### [Java 生态发展史](/02_study/0003_java_ecosystem.md)
 ### [Java 知识点](/02_study/0004_java_knowledge.md)
 ### [IntelliJ IDEA](/02_study/0006_ide_idea.md)
+### [Linux 常用命令](/02_study/0007_linux_command.md)
 
 
 ## 关于作者
