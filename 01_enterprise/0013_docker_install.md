@@ -95,6 +95,16 @@ sudo systemctl start docker
 
 启动 Docker 服务
 
+关于Docker启动报错：docker.socket: Failed to listen on sockets: Address already in use
+
+```shell
+# 查询关于docker的文件夹
+ls -l /var/run/ | grep docker
+
+# 删除 docker.sock 文件夹
+rm -rf /var/run/docker.sock
+```
+
 ----
 
 ![IntelliJ IDEA](./images/0013_docker_install/010.png)
@@ -154,6 +164,94 @@ sudo docker info
 ```
 
 查看镜像源是否配置成功
+
+## 快速安装 docker
+
+```shell
+# 环境 CentOS 8 Stream
+# 卸载旧版本
+sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-engine
+
+# 修改镜像仓库,CentOS 8默认的仓库被删除了
+sudo sed -i -e "s|mirrorlist=|#mirrorlist=|g" /etc/yum.repos.d/CentOS-*
+sudo sed -i -e "s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g" /etc/yum.repos.d/CentOS-*
+
+# 安装软件工具包                  
+sudo yum install -y yum-utils
+
+# 给 yum 添加镜像仓库
+sudo yum-config-manager --add-repo https://mirrors.cloud.tencent.com/docker-ce/linux/centos/docker-ce.repo
+
+# 查看 docker 仓库有哪些版本
+yum list docker-ce --showduplicates | sort -r
+
+# 安装 docker 核心组件
+sudo yum -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin --allowerasing
+
+# 启动 docker 服务
+sudo systemctl start docker
+
+# 给 docker 添加镜像仓库和 cgroup (资源限制,优先级管理,资源统计,控制访问)
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://mirror.ccs.tencentyun.com"],
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2"
+}
+EOF
+
+# 重启 docker
+sudo systemctl restart docker
+
+# 查看 docker 信息
+sudo docker info
+
+# 验证镜像部署是否正常
+sudo docker run hello-world
+
+# docker 常用命令
+# 列出所有容器
+docker ps -a
+
+# 停止容器
+docker stop my-container
+
+# 删除容器
+docker rm my-container
+
+# 指定文件构建镜像
+docker build -t demo002:latest -f demo002/Dockerfile demo002
+
+# 推送镜像到镜像仓库
+docker push my-image
+
+# 拉取镜像
+docker pull my-image
+
+# 查看容器日志
+docker logs my-container
+
+# 进入容器
+docker exec -it my-container bash
+
+# 如 docker.sock 被占用,使用以下命令
+# 查询关于docker的文件夹
+ls -l /var/run/ | grep docker
+
+# 删除 docker.sock 文件夹
+rm -rf /var/run/docker.sock
+```
 
 ----
 
