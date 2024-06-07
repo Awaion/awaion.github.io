@@ -29,6 +29,8 @@ permalink: /
 ### [Docker 安装](/01_enterprise/0013_docker_install.md)
 ### [Docker 常用镜像](/01_enterprise/0014_docker_software.md)
 ### [KubeSphere 安装](/01_enterprise/0015_kubesphere.md)
+### [KubeSphere 软件安装](/01_enterprise/0016_kubesphere_software.md)
+### [KubeSphere DevOps](/01_enterprise/0017_kubesphere_devops.md)
 
 ## 业余学习
 
