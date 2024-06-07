@@ -3,170 +3,258 @@
 # 主要内容
 
 > [简介](#简介)  
-> [前提条件](#前提条件)  
-> [操作系统](#操作系统)  
-> [Helm](#Helm)  
-> [Kubernetes 集群](#Kubernetes-集群)  
-> [KubeSphere Core](#KubeSphere-Core)  
-> [Web 页面简介](#Web-页面简介)  
+> [前置配置](#前置配置)  
+> [社区版](#社区版)  
+> [企业版](#企业版)  
+> [Docker 安装](#docker-安装)  
+> [其它](#其它)  
+> [Web 页面简介](#web-页面简介)  
 > [术语](#术语)  
-> [题外话](#题外话)  
 
 ## 简介
 
-KubeSphere 是基于 Kubernetes 内核的分布式多租户商用云原生操作系统.
+KubeSphere 是在 Kubernetes 之上构建的面向云原生应用的分布式操作系统,完全开源,支持多云与多集群管理,提供全栈的 IT 自动化运维能力,简化企业的 
+DevOps 工作流.它的架构可以非常方便地使第三方应用与云原生生态组件进行即插即用 (plug-and-play) 的集成.
 
-KubeSphere 集成了众多企业级功能,如多租户管理,多集群管理,DevOps,GitOps,服务网格,微服务,可观测(包括监控,告警,日志,审计,事件,通知等),应用商店,
-边缘计算,网络与存储管理等.
+作为全栈的多租户容器平台,KubeSphere 提供了运维友好的向导式操作界面,帮助企业快速构建一个强大和功能丰富的容器云平台.KubeSphere 为用户提供构建企
+业级 Kubernetes 环境所需的多项功能,例如多云与多集群管理,Kubernetes 资源管理,DevOps,应用生命周期管理,微服务治理(服务网格),日志查询与收集,
+服务与网络,多租户管理,监控告警,事件与审计查询,存储管理,访问权限控制,GPU 支持,网络策略,镜像仓库管理以及安全管理等.
 
-KubeSphere 特色是资源量化运营,多级权限管控,智能弹性运维,云原生一栈式转型.
+KubeSphere 还开源了 KubeKey 帮助企业一键在公有云或数据中心快速搭建 Kubernetes 集群,提供单节点,多节点,集群插件安装,以及集群升级与运维.
 
-KubeSphere 官网: https://docs.kubesphere.com.cn/
+KubeSphere 官网: https://kubesphere.io/zh/
 
-## 前提条件
+KubeSphere 企业收费版: https://kubesphere.com.cn/
 
-硬件: CPU > 2 核,内存 > 2 GB,磁盘 > 40 GB.
+![架构图](./images/0015_kubesphere/architecture.png)
 
-操作系统: CentOS Stream 9 或 其它
-
-Linux 内核: 4.15 及更高版本,命令 uname -srm 查看 Linux 内核版本.
-
-网络: 请确保 /etc/resolv.conf 中的 DNS 地址可用.
-
-网络: 建议禁用防火墙以避免组件通信受阻(安全问题待评估).
-
-其他: 节点上可以使用 sudo curl openssl 命令.
-
-以下为单机安装教程
-
-## 操作系统
+## 前置配置
 
 ```shell
-# 设置主机名,然后重启
-hostnamectl set-hostname k8s-master
+# 机器配置 4核 10G 40G,VMWare 全新 Ubuntu 22.04 LTS
+sudo ping www.github.com
+
+# 设置主机名
+sudo hostnamectl set-hostname k8s-master
+
+# 重启
+reboot
+
+# 切换 root 用户
+sudo passwd root
+su root
 
 # 根目录下创建 app 目录
-mkdir app
+mkdir /app
 
 # 进入 app 目录
 cd /app/
+
+# 更新 Advanced Package Tool
+sudo apt update
+
+# 查看 apt 软件源列表 默认有清华源
+sudo cat /etc/apt/sources.list
+
+# 安装 curl net-tools openssh git
+sudo apt install curl net-tools openssh-server git -y
+
+# 获取 kubekey 安装包
+获取 kubekey-v3.1.1-linux-amd64.tar.gz 安装包 https://github.com/kubesphere/kubekey/releases 
+
+# 管理员权限打开文件管理器粘贴
+sudo nautilus
+
+# 文件解压
+sudo tar -xzf kubekey-v3.1.1-linux-amd64.tar.gz
+
+# 安装依赖
+sudo apt install socat conntrack ebtables ipset ipvsadm -y
+crictl etcd
+
+## 查看可安装版本
+sudo ./kk version --show-supported-k8s
+
+## 临时环境变量 重启后会消失
+export KKZONE=cn
+
+# 查看环境变量
+env | grep KKZONE
 ```
 
-## Helm
-
-Helm 是 Kubernetes 的包管理器
-
-备用: [get_helm.sh](./images/0015_kubesphere/get_helm.sh)
+## 社区版
 
 ```shell
-# 获取 get_helm.sh 脚本,长时间无响应就重新下载,重新下载很快
-curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+# 社区版 All-in-one 一键安装 查看下环境变量是否生效 或者分开安装 k8s kubesphere
+sudo ./kk create cluster --with-kubernetes v1.22.12 --with-kubesphere v3.4.1
 
-# 脚本给所有者授予读写执行权限
-chmod 700 get_helm.sh
+# 检查安装结果
+sudo kubectl logs -n kubesphere-system $(kubectl get pod -n kubesphere-system -l 'app in (ks-install, ks-installer)' -o jsonpath='{.items[0].metadata.name}') -f
 
-# 执行脚本
-./get_helm.sh
+# 清除一下污点(单机一般不会有污点)
+sudo kubectl get nodes 
+sudo kubectl describe nodes k8s-master | grep Taints
+sudo kubectl taint node k8s-master 污点名-
 
-# 查看 helm 安装版本
-helm version
+# 查看 kubelet 日志
+journalctl -xeu kubelet
 
-# 配置仓库,默认仓库在国外,访问慢,以下有三个国内镜像源可供选择,分别是腾讯,阿里,开源社
-helm repo add tkemarket https://market-tke.tencentcloudcr.com/chartrepo/opensource-stable
-helm repo add aliyun https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts
-helm repo add kaiyuanshe http://mirror.kaiyuanshe.cn/kubernetes/charts/
+# /etc/docker/daemon.json 配置镜像源,并且 ping 域名是否可解析
+sudo ping registry.cn-beijing.aliyuncs.com
+sudo ping rsk59qvc.mirror.aliyuncs.com
+sudo docker images
+sudo kubectl describe pod ks-console-768dbcdf9c-6bqsx -n kubesphere-system
 
-# 手动更新仓库(一般都会自动更新,不生效时手动更新)
-helm repo update
+# 卸载集群
+sudo ./kk delete cluster
+```
+
+[helm安装脚本](./images/0015_kubesphere/get_helm.sh)
+
+[kubekey安装脚本](./images/0015_kubesphere/get_kk.sh)
+
+[docker安装脚本](./images/0015_kubesphere/get_docker.sh)
+
+[kubesphere删除脚本](./images/0015_kubesphere/kubesphere-delete.sh)
+
+## 企业版
+
+```shell
+# 企业版 快速创建一个 Kubernetes 集群 KKZONE=cn 很重要,国内服务器没有无法安装成功
+sudo ./kk create cluster --skip-pull-images --with-local-storage  --with-kubernetes v1.25.4 --container-manager containerd  -y
+
+# 每隔 1 秒查看容器信息,等状态是 Running
+sudo watch -n 1 kubectl get pods -A
 
 # 列出 helm 仓库
 helm repo list
 
-# 移除指定 helm 仓库,不需要指定仓库时使用
-helm repo remove xxx
+# Kubernetes 集群可用后, 执行以下命令通过 helm 安装 KubeSphere Core
+sudo helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-0.4.0.tgz --set apiserver.nodePort=30881 --debug --wait
+
+# 看系统是否起来
+sudo kubectl get pod -n kubesphere-system
 ```
 
-## Kubernetes 集群
-
-使用 KubeKey 快速创建一个 Kubernetes 集群
-
-备用: [get_kk.sh](./images/0015_kubesphere/get_kk.sh)
+## Docker 安装
 
 ```shell
-# 设置环境变量
-export KKZONE=cn
+# 下载 docker 安装脚本
+curl -fsSL https://get.docker.com -o get_docker.sh
 
-# 查看环境设置
-env | grep KKZONE
+# 运行 docker 安装脚本
+sh get_docker.sh
 
-# 安装依赖项 网络工具和连接信息工具
-yum install socat conntrack -y
+# 开机自启动 docker 服务
+sudo systemctl enable docker
 
-# 查看是否正常安装使用
-socat -h
-conntrack --help
+# 给 docker 添加镜像仓库和 cgroup (资源限制,优先级管理,资源统计,控制访问)
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://rsk59qvc.mirror.aliyuncs.com"],
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2"
+}
+EOF
 
-# 安装 KubeKey,下载安装包时间快慢取决于带宽,比如 8M 带宽,下载速度 8M bit / 8 = 1M Byte (8 bit(网络传输的速率基本单位) = 1 byte
-# (计算机处理数据基本单位))
-curl -sfL https://get-kk.kubesphere.io | sh -
+# 查看配置
+sudo cat /etc/docker/daemon.json
 
-# 下载完成后,查看文件大小
-du -ah
+# 重启 docker
+sudo systemctl restart docker
 
-# 快速创建一个 Kubernetes 集群
-./kk create cluster --skip-pull-images --with-local-storage  --with-kubernetes v1.25.4 --container-manager containerd  -y
+# 查看 docker 信息
+sudo docker info
 
-# 查看容器列表信息,确保状态都是 Running
-kubectl get pods -A
+# 验证镜像部署是否正常
+sudo docker run hello-world
 
-# 每隔 1 秒查看容器信息
-watch -n 1 kubectl get pods -A
-
-# 查看节点
-kubectl get nodes
-
-# 查看集群信息
+# Kubernetes 常用命令
+# 集群信息
 kubectl cluster-info
 
-# 重启,可不执行,有问题执行看看
-systemctl restart kubelet
+# 查看所有 pod
+kubectl get pods -A
 
-# 查看节点详细信息
-kubectl describe node <node-name>
+# 查看节点
+kubectl get nodes -A
+
+# 查看所有服务
+kubectl get svc -A
+
+# 查看指定命名空间 pod 详情
+kubectl describe pods -n devops01jmn9p demo002-675c968d59-gbbsw
+
+# 创建一个 deployment
+kubectl create deployment <deployment-name> --image=<image-name>
+
+# 缩放 deployment
+kubectl scale deployment <deployment-name> --replicas=<num-replicas>
+
+# 将服务暴露为 NodePort
+kubectl expose deployment <deployment-name> --type=NodePort --port=<port-number>
+
+# 更新 deployment 的镜像
+kubectl set image deployment/<deployment-name> <container-name>=<new-image-name>
+
+# 删除 deployment
+kubectl delete deployment <deployment-name>
 ```
 
-## KubeSphere Core
-
-使用 Helm 安装单机 KubeSphere Core
+## 其它
 
 ```shell
-# Kubernetes 集群可用后, 执行以下命令通过 helm 安装 KubeSphere Core
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-0.4.0.tgz --set apiserver.nodePort=30881 --debug --wait
-```
+# 停止防火墙服务
+sudo systemctl stop firewalld 
+# 禁止防火墙开机自启   
+sudo systemctl disable firewalld 
 
-安装成功后信息
+# 检查 DNS 解析文件
+sudo cat /etc/resolv.conf
+sudo cat /etc/systemd/resolved.conf
+sudo cat /run/systemd/resolve/resolv.conf
+# 添加 DNS 解析服务器 阿里
+sudo vi /etc/systemd/resolved.conf
+DNS=223.5.5.5
+# 重启域名解析
+sudo systemctl restart systemd-resolved
+# 查看解析服务状态
+sudo systemctl status systemd-resolved
 
-```shell
-Please wait for several seconds for KubeSphere deployment to complete.
+# 查看 kubelet 日志
+journalctl -xeu kubelet
 
-1. Make sure KubeSphere components are running:
+# 查看 containerd 配置,是否有国内镜像
+sudo cat /etc/containerd/config.toml
+sandbox_image = "registry.aliyuncs.com/google_containers/pause:3.9"
+sandbox_image = "registry.cn-beijing.aliyuncs.com/kubesphereio/pause:3.9"
 
-     kubectl get pods -n kubesphere-system
+# 查看 kubelet 配置
+sudo cat /var/lib/kubelet/config.yaml
 
-2. Then you should be able to visit the console NodePort:
+# 列出 helm 仓库
+helm repo list
+# 配置仓库,默认仓库在国外,访问慢
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo add stable http://mirror.azure.cn/kubernetes/charts
+helm repo add aliyun https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts
+helm repo add incubator https://charts.helm.sh/incubator
+helm repo add kaiyuanshe http://mirror.kaiyuanshe.cn/kubernetes/charts/
+# 手动更新仓库(一般都会自动更新,不生效时手动更新)
+helm repo update
 
-     Console: http://10.0.12.7:30880
+# 部署
+mkdir ~/.kube
+echo "$KUBECONFIG_CONTENT" > ~/.kube/config
+envsubst < deploy/no-branch-dev/devops-sample-svc.yaml | kubectl apply -f -
+envsubst < deploy/no-branch-dev/devops-sample.yaml | kubectl apply -f -
 
-3. To login to your KubeSphere console:
-
-     Account: admin
-     Password: "P@88w0rd"
-     NOTE: Please change the default password after login.
-```
-
-```shell
-# KubeSphere 卸载命令
-helm -n kubesphere-system uninstall ks-core
+# GitHub
+https://github.com/kubesphere/kubekey/blob/master/README_zh-CN.md
 ```
 
 ## Web 页面简介
@@ -287,7 +375,7 @@ NodePort 通过每个节点上的 IP 和静态端口(NodePort)暴露服务,可�
 
 LoadBalancer 使用云服务商提供的负载均衡器向外部暴露服务.
 
-应⽤路由(Ingress) 应⽤路由⽤于对服务进⾏聚合并提供给集群外部访问.每个应⽤路由包含域名及其⼦路径到不同服务的映射规则.KubeSphere 应用路由对应 
+应⽤路由(Ingress) 应⽤路由⽤于对服务进⾏聚合并提供给集群外部访问.每个应⽤路由包含域名及其⼦路径到不同服务的映射规则.KubeSphere 应用路由对应
 Kubernetes 中的 Ingress.
 
 #### 存储
@@ -321,10 +409,10 @@ Out-of-SCM 通过图形编辑面板构建流水线,无需编写 Jenkinsfile.
 CI 节点 流水线,S2I 和 B2I 任务的专用节点.一般来说,应用程序往往需要在构建过程中拉取多个依赖项,这可能会导致如拉取时间过长,网络不稳定等问题,从而使
 得构建失败.为了确保流水线正常运行并加快构建速度(通过缓存),您可以配置一个或一组 CI 节点以供 CI/CD 流水线和 S2I/B2I 任务专用.
 
-B2I (Binary-to-Image) B2I 是一套从二进制可执行文件(例如 Jar 和 War 等)构建可再现容器镜像的工具和工作流.开发者和运维团队在项目打包成 War 
+B2I (Binary-to-Image) B2I 是一套从二进制可执行文件(例如 Jar 和 War 等)构建可再现容器镜像的工具和工作流.开发者和运维团队在项目打包成 War
 和 Jar 这一类的制品后,可快速将制品或二进制的 Package 打包成 Docker 镜像,并发布到 DockerHub 或 Harbor 等镜像仓库中.
 
-S2I (Source-to-Image) S2I 是一套从源代码构建可再现容器镜像的工具和工作流.通过将源代码注入容器镜像,自动将编译后的代码打包成镜像.在 
+S2I (Source-to-Image) S2I 是一套从源代码构建可再现容器镜像的工具和工作流.通过将源代码注入容器镜像,自动将编译后的代码打包成镜像.在
 KubeSphere 中支持 S2I 构建镜像,也支持以创建服务的形式,一键将源代码生成镜像推送到仓库,并创建其部署和服务最终自动发布到 Kubernetes 中.
 
 #### 日志,事件和审计
@@ -378,8 +466,6 @@ Prometheus 负责监控存储系统的各项数据,根据告警规则向告警�
 ----
 
 以上就是本文核心内容.
-
-## 题外话
 
 路漫漫兮修远兮,我将上下而求索.
 
