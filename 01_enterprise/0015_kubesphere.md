@@ -22,9 +22,17 @@ DevOps 工作流.它的架构可以非常方便地使第三方应用与云原生
 
 KubeSphere 还开源了 KubeKey 帮助企业一键在公有云或数据中心快速搭建 Kubernetes 集群,提供单节点,多节点,集群插件安装,以及集群升级与运维.
 
-KubeSphere 官网: https://kubesphere.io/zh/
+14.5 KubeSphere 官网 青云科技: https://kubesphere.io/zh/
 
 KubeSphere 企业收费版: https://kubesphere.com.cn/
+
+6.2 同类产品1 阿里云: https://static.kubevela.net/zh/
+
+4.8 同类产品2 好雨科技: https://www.rainbond.com/
+
+k8s package: https://helm.sh/
+
+k8s: https://kubernetes.io/zh-cn/
 
 ![架构图](./images/0015_kubesphere/architecture.png)
 
