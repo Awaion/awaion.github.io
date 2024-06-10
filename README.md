@@ -31,7 +31,8 @@ permalink: /
 ### [KubeSphere 安装](/01_enterprise/0015_kubesphere.md)
 ### [KubeSphere 软件安装](/01_enterprise/0016_kubesphere_software.md)
 ### [KubeSphere DevOps](/01_enterprise/0017_kubesphere_devops.md)
-### [Spring Boot 3](/01_enterprise/0018_springboot3_init.md)
+### [SpringBoot 3](/01_enterprise/0018_springboot3_init.md)
+### [SpringBoot 3 Log](/01_enterprise/0019_springboot3_log.md)
 
 ## 业余学习
 
