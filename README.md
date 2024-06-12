@@ -35,6 +35,7 @@ permalink: /
 ### [SpringBoot 3 Log](/01_enterprise/0019_springboot3_log.md)
 ### [SpringBoot 3 Web](/01_enterprise/0020_springboot3_web.md)
 ### [Spring Boot 3 + Spring Web + MyBatis](/01_enterprise/0021_springboot3_ssm.md)
+### [Spring Boot 3 特性](/01_enterprise/0022_springboot3_base.md)
 
 ## 业余学习
 
