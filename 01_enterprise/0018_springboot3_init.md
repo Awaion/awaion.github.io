@@ -15,6 +15,16 @@
 SpringBoot 基于约定大于配置的原则,无需编写或少量编写配置即可快速整合 Spring 框架以及第三方技术框架,帮我们简单快速地创建一个独立的,生产级别的 
 Spring 应用.
 
+SpringBoot 3 改动
+
+- JDK 最低版本为 17
+- 新增自动配置包 META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
+- javax.* 迁移至 jakarta.* 原因是 Java EE 版权转移到 Eclipse Foundation
+- 函数式Web
+- ProblemDetails
+- GraalVM 与 AOT
+- 响应式编程
+
 可概括为以下特性:
 
 - 快速创建独立 Spring 应用
