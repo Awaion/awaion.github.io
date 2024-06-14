@@ -34,10 +34,11 @@ permalink: /
 ### [SpringBoot 3](/01_enterprise/0018_springboot3_init.md)
 ### [SpringBoot 3 Log](/01_enterprise/0019_springboot3_log.md)
 ### [SpringBoot 3 Web](/01_enterprise/0020_springboot3_web.md)
-### [Spring Boot 3 + Spring Web + MyBatis](/01_enterprise/0021_springboot3_ssm.md)
-### [Spring Boot 3 特性](/01_enterprise/0022_springboot3_base.md)
-### [Spring Boot 3 事件](/01_enterprise/0023_springboot3_core.md)
-### [Spring Boot 3 自动配置](/01_enterprise/0024_springboot3_auto.md)
+### [SpringBoot 3 + Spring Web + MyBatis](/01_enterprise/0021_springboot3_ssm.md)
+### [SpringBoot 3 特性](/01_enterprise/0022_springboot3_base.md)
+### [SpringBoot 3 事件](/01_enterprise/0023_springboot3_core.md)
+### [SpringBoot 3 自动配置](/01_enterprise/0024_springboot3_auto.md)
+### [SpringBoot 3 整合](/01_enterprise/0025_springboot3_starter.md)
 
 ## 业余学习
 
