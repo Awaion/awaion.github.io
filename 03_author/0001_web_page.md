@@ -88,6 +88,9 @@
 - google mail: [https://mail.google.com/mail/u/0/#inbox](https://mail.google.com/mail/u/0/#inbox)
 - sms active: [https://sms-activate.org/cn](https://sms-activate.org/cn)
 - vpn: [https://www.xindongli144.xyz/auth/login](https://www.xindongli144.xyz/auth/login)
+- v2ray-core: [https://github.com/v2fly/v2ray-core](https://github.com/v2fly/v2ray-core)
+- new-pac: [https://github.com/Alvin9999/new-pac](https://github.com/Alvin9999/new-pac)
+- GitHub520: [https://github.com/521xueweihan/GitHub520](https://github.com/521xueweihan/GitHub520)
 
 ## 过滤
 

@@ -41,6 +41,8 @@ k8s: https://kubernetes.io/zh-cn/
 ```shell
 # 机器配置 4核 10G 40G,VMWare 全新 Ubuntu 22.04 LTS
 sudo ping www.github.com
+sudo ping www.google.com
+cat /etc/hosts
 
 # 设置主机名
 sudo hostnamectl set-hostname k8s-master
@@ -125,6 +127,8 @@ sudo ./kk delete cluster
 
 [kubesphere删除脚本](./images/0015_kubesphere/kubesphere-delete.sh)
 
+[科学上网脚本](images/0015_kubesphere/install-release.sh)
+
 ## 企业版
 
 ```shell
@@ -147,8 +151,22 @@ sudo kubectl get pod -n kubesphere-system
 ## Docker 安装
 
 ```shell
+sudo ping www.github.com
+sudo ping www.google.com
+cat /etc/hosts
+add-apt-repository \
+   "deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+
 # 下载 docker 安装脚本
 curl -fsSL https://get.docker.com -o get_docker.sh
+
+# 管理员权限打开文件管理器粘贴
+sudo nautilus
 
 # 运行 docker 安装脚本
 sh get_docker.sh
