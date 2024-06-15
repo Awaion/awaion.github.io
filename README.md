@@ -38,7 +38,8 @@ permalink: /
 ### [SpringBoot 3 特性](/01_enterprise/0022_springboot3_base.md)
 ### [SpringBoot 3 事件](/01_enterprise/0023_springboot3_core.md)
 ### [SpringBoot 3 自动配置](/01_enterprise/0024_springboot3_auto.md)
-### [SpringBoot 3 整合](/01_enterprise/0025_springboot3_starter.md)
+### [SpringBoot 3 + Redis + Spring Doc](/01_enterprise/0025_springboot3_starter.md)
+### [SpringBoot 3 + RPC + Kafka](/01_enterprise/0026_springboot3_rpc.md)
 
 ## 业余学习
 
