@@ -40,6 +40,7 @@ permalink: /
 ### [SpringBoot 3 自动配置](/01_enterprise/0024_springboot3_auto.md)
 ### [SpringBoot 3 + Redis + Spring Doc](/01_enterprise/0025_springboot3_starter.md)
 ### [SpringBoot 3 + RPC + Kafka](/01_enterprise/0026_springboot3_rpc.md)
+### [SpringBoot 3 + Spring Security](/01_enterprise/0027_springboot3_security.md)
 
 ## 业余学习
 
