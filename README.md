@@ -42,6 +42,7 @@ permalink: /
 ### [SpringBoot 3 + RPC + Kafka](/01_enterprise/0026_springboot3_rpc.md)
 ### [SpringBoot 3 + Spring Security](/01_enterprise/0027_springboot3_security.md)
 ### [SpringBoot 3 + Actuator + Prometheus](/01_enterprise/0028_springboot3_prometheus.md)
+### [SpringBoot 3 + JVM + GraalVM](/01_enterprise/0029_springboot3_aot.md)
 
 ## 业余学习
 
