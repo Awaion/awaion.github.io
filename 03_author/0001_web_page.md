@@ -81,6 +81,7 @@
 - ubuntu: [https://www.bilibili.com/video/BV1JF4m1A7mN/](https://www.bilibili.com/video/BV1JF4m1A7mN/)
 - docker: [https://www.bilibili.com/video/BV1gr4y1U7CY/](https://www.bilibili.com/video/BV1gr4y1U7CY/)
 - kubesphere: [https://www.bilibili.com/video/BV13Q4y1C7hS/](https://www.bilibili.com/video/BV13Q4y1C7hS/)
+- springboot3: [https://www.bilibili.com/video/BV1Es4y1q7Bf](https://www.bilibili.com/video/BV1Es4y1q7Bf)
 
 ## 其它
 - certbot: [https://certbot.eff.org/](https://certbot.eff.org/)
