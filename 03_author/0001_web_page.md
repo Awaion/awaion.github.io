@@ -73,6 +73,12 @@
 - yupi: [https://www.codefather.cn/](https://www.codefather.cn/)
 - aliyun docker ce: [https://developer.aliyun.com/mirror/docker-ce](https://developer.aliyun.com/mirror/docker-ce)
 
+## 插件
+
+- 浏览器 火山翻译 https://bytedance.larkoffice.com/docx/CMu2dZjXKojmGfxjibscjm2BnJh
+- IDE 通义灵码 https://plugins.jetbrains.com/plugin/17809-tongyi-lingma--your-ai-coding-assistant-type-less-code-more-
+- IDE 智谱 https://codegeex.cn/zh-CN?article=240618
+
 ## 视频
 
 - vue: [https://www.bilibili.com/video/BV1Rs4y127j8/](https://www.bilibili.com/video/BV1Rs4y127j8/)
