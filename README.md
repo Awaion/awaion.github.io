@@ -45,6 +45,7 @@ permalink: /
 ### [SpringBoot3 + JVM + GraalVM](/01_enterprise/0029_springboot3_aot.md)
 ### [SpringBoot3 + WebFlux](/01_enterprise/0030_springboot3_webflux.md)
 ### [SpringBoot3 + R2DBC](/01_enterprise/0031_springboot3_r2dbc.md)
+### [SpringBoot3 + R2DBC + WebFlux + Security](/01_enterprise/0032_springboot3_reactor.md)
 
 ## 业余学习
 
