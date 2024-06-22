@@ -177,6 +177,8 @@ jackson2SmilePresent = ClassUtils.isPresent("com.fasterxml.jackson.dataformat.sm
   - 没有就在 templates 下找 index 模板页
 - 在静态资源目录下找 favicon.ico
 
+webjars: https://www.webjars.org/
+
 ```text
 # 通过配置修改静态资源规则
 # 开启静态资源映射规则
