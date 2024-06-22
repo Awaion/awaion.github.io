@@ -88,6 +88,7 @@
 - docker: [https://www.bilibili.com/video/BV1gr4y1U7CY/](https://www.bilibili.com/video/BV1gr4y1U7CY/)
 - kubesphere: [https://www.bilibili.com/video/BV13Q4y1C7hS/](https://www.bilibili.com/video/BV13Q4y1C7hS/)
 - springboot3: [https://www.bilibili.com/video/BV1Es4y1q7Bf](https://www.bilibili.com/video/BV1Es4y1q7Bf)
+- springboot3 reactor: [https://www.bilibili.com/video/BV1sC4y1K7ET](https://www.bilibili.com/video/BV1sC4y1K7ET)
 
 ## 其它
 - certbot: [https://certbot.eff.org/](https://certbot.eff.org/)
