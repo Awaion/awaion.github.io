@@ -44,6 +44,7 @@ permalink: /
 ### [SpringBoot3 + Actuator + Prometheus](/01_enterprise/0028_springboot3_prometheus.md)
 ### [SpringBoot3 + JVM + GraalVM](/01_enterprise/0029_springboot3_aot.md)
 ### [SpringBoot3 + WebFlux](/01_enterprise/0030_springboot3_webflux.md)
+### [SpringBoot3 + R2DBC](/01_enterprise/0031_springboot3_r2dbc.md)
 
 ## 业余学习
 
