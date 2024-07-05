@@ -48,6 +48,7 @@ permalink: /
 ### [SpringBoot3 + R2DBC + WebFlux + Security](/01_enterprise/0032_springboot3_reactor.md)
 ### [SpringCloud 2023](01_enterprise/0033_springcloud_2023.md)
 ### [SpringCloud Alibaba](01_enterprise/0034_springcloud_alibaba.md)
+### [Spring AI](01_enterprise/0035_springboot3_AI.md)
 
 ## 业余学习
 
