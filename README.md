@@ -59,6 +59,10 @@ permalink: /
 ### [Linux 常用命令](/02_study/0007_linux_command.md)
 ### [Lambda + Stream API + Reactive Stream](/02_study/0008_reactor_base.md)
 ### [Reactor](/02_study/0009_reactor_use.md)
+### [Distributed Systems](02_study/0010_distributed_systems.md)
+### [Java Package](02_study/0011_java_package.md)
+### [Data Structure](02_study/0012_data_structure.md)
+### [Design Mode](02_study/0013_design_mode.md)
 
 
 ## 关于作者
