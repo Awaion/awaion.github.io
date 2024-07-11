@@ -64,6 +64,10 @@ permalink: /
 ### [Java Package](02_study/0011_java_package.md)
 ### [Data Structure](02_study/0012_data_structure.md)
 ### [Design Mode](02_study/0013_design_mode.md)
+### [JVM](02_study/0014_java_jvm.md)
+### [Kafka](02_study/0015_kafka.md)
+### [Redis](02_study/0016_redis.md)
+### [Netty](02_study/0017_netty.md)
 
 
 ## 关于作者
