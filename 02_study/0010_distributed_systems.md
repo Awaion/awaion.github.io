@@ -49,6 +49,7 @@ Gossip(流言蜚语)数据一致性协议是通过广播方式传递的,其特�
 - 同一个节点可能会收到重复的消息,因为可能同时多个节点正好向它散播
 - 集群是去中心化的,节点之间都是平等的
 - 消息的散播不用等接收节点的 ack,即消息可能会丢失,但是最终应该会被感染
+- Redis Cluster采用了Gossip协议
 
 ## Raft数据一致性协议
 
@@ -64,6 +65,8 @@ Raft过程:
 
 - Leader 选举: 无Leader时,所有的Follower节点切换为Candidate候选节点,然后拉票,票数最多变为Leader.
 - 数据日志的复制: 将变更记录到log中,然后Leader会将这个变更随着下一次的心跳通知给Follower节点.
+
+Nacos,Consul,Kafka采用Raft协议
 
 ## 负载均衡算法
 
