@@ -91,7 +91,29 @@
 - springboot3 reactor: [https://www.bilibili.com/video/BV1sC4y1K7ET](https://www.bilibili.com/video/BV1sC4y1K7ET)
 - springcloud2023: [https://www.bilibili.com/video/BV1gW421P7RD](https://www.bilibili.com/video/BV1gW421P7RD)
 
+## 翻译
+
+- 百度 https://fanyi.baidu.com/
+- 阿里 https://translate.alibaba.com/
+- 字节 https://translate.volcengine.com/
+- 网易 https://fanyi.youdao.com/
+
+## 国产AI
+
+Android
+
+- 蓝心小V
+- 通义
+- 天工
+
+Windows
+
+- 百度 https://chat.baidu.com/
+- 阿里 https://tongyi.aliyun.com/qianwen/
+- 字节 https://www.doubao.com/chat/
+
 ## 其它
+
 - certbot: [https://certbot.eff.org/](https://certbot.eff.org/)
 - linkedin: [https://www.linkedin.com/feed/](https://www.linkedin.com/feed/)
 - google mail: [https://mail.google.com/mail/u/0/#inbox](https://mail.google.com/mail/u/0/#inbox)
