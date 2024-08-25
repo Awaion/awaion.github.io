@@ -1,0 +1,35 @@
+services:
+  mongo:
+    environment:
+      MONGO_AUTH: "yes"
+      MONGO_INITDB_DATABASE: test01
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+      MONGO_INITDB_ROOT_USERNAME: root
+    image: mongo
+    ports:
+      - published: 27017
+        target: 27017
+    restart: always
+    volumes:
+      - /app/mongo/data/db:/data/db:rw
+  mongo-express:
+    container_name: mongo-express
+    depends_on:
+      mongo:
+        condition: service_started
+    environment:
+      ME_CONFIG_BASICAUTH_PASSWORD: 123456
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: 123456
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_OPTIONS_EDITORTHEME: 3024-night
+    image: mongo-express
+    ports:
+      - published: 27027
+        target: 8081
+    restart: always
+    volumes:
+      - /app/mongo-express/config:/var/www/mongo-express/config:rw
+      - /app/mongo-express/logs:/var/www/mongo-express/logs:rw
+version: '3.9'

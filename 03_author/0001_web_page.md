@@ -90,6 +90,7 @@
 - springboot3: [https://www.bilibili.com/video/BV1Es4y1q7Bf](https://www.bilibili.com/video/BV1Es4y1q7Bf)
 - springboot3 reactor: [https://www.bilibili.com/video/BV1sC4y1K7ET](https://www.bilibili.com/video/BV1sC4y1K7ET)
 - springcloud2023: [https://www.bilibili.com/video/BV1gW421P7RD](https://www.bilibili.com/video/BV1gW421P7RD)
+- Stable Diffusion: https://www.bilibili.com/video/BV1nL411B7XT
 
 ## 翻译
 
@@ -111,6 +112,10 @@ Windows
 - 百度 https://chat.baidu.com/
 - 阿里 https://tongyi.aliyun.com/qianwen/
 - 字节 https://www.doubao.com/chat/
+- kimi https://kimi.moonshot.cn/
+- https://www.minimaxi.com/
+- https://chatglm.cn/
+- https://ying.baichuan-ai.com/chat
 
 ## 其它
 
@@ -119,6 +124,7 @@ Windows
 - google mail: [https://mail.google.com/mail/u/0/#inbox](https://mail.google.com/mail/u/0/#inbox)
 - sms active: [https://sms-activate.org/cn](https://sms-activate.org/cn)
 - vpn: [https://www.xindongli144.xyz/auth/login](https://www.xindongli144.xyz/auth/login)
+- vpn: [https://www.xindonglivip.xyz/](https://www.xindonglivip.xyz/)
 - v2ray-core: [https://github.com/v2fly/v2ray-core](https://github.com/v2fly/v2ray-core)
 - new-pac: [https://github.com/Alvin9999/new-pac](https://github.com/Alvin9999/new-pac)
 - GitHub520: [https://github.com/521xueweihan/GitHub520](https://github.com/521xueweihan/GitHub520)
