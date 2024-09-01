@@ -15,8 +15,15 @@ sudo passwd root
 # 选择 root 用户
 su root
 
+# 关闭防火墙
+systemctl disable ufw
+systemctl status ufw
+
+# ip策略查看
+iptables -L
+
 # 修改为国内 apt 镜像地址
-sudo bash -c "cat << EOF > /etc/apt/sources.list && apt update
+bash -c "cat << EOF > /etc/apt/sources.list && apt update
 deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
 deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
@@ -77,18 +84,19 @@ pip3 install docker-compose
 # 版本查看 1.29.2
 docker-compose --version
 
-# 管理员权限打开文件管理器粘贴 docker-compose-cluster.yml
+# 管理员权限打开文件管理器粘贴 docker-compose 文件
 sudo nautilus
 
 # 检测文件配置
 docker-compose -f docker-compose-mongo.yml config
 
-# 新增 dockerhub 镜像仓库 不确定何时失效
+# https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors
+# 新增 dockerhub 镜像仓库 不确定何时失效 ping dockerhub.icu
 mkdir -p /etc/docker
 tee /etc/docker/daemon.json <<-'EOF'
 {
   "registry-mirrors": [
-    "https://dockerhub.icu"
+    "https://docker-cf.registry.cyou"
   ]
 }
 EOF
@@ -96,25 +104,4 @@ cat /etc/docker/daemon.json
 systemctl daemon-reload
 systemctl restart docker
 docker info
-
-# 进入目录
-cd /app
-docker run hello-world
-
-# 启动
-docker compose -f docker-compose-mongo.yml up -d
-
-# 查看启动的容器
-netstat -nltp | grep docker
-
-# 查看 docker 日志
-docker ps
-docker logs d26ff8e6e155
-
-# 查看 ip 访问 docker-express http://192.168.31.151:27027/
-ip addr
-
-# 停止 
-docker compose -f docker-compose-mongo.yml down
-
 ```

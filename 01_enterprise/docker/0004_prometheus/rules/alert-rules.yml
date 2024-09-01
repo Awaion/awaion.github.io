@@ -1,0 +1,24 @@
+groups:
+  - name: prometheus-alert
+    rules:
+    - alert: service-down
+      expr: prometheus:up == 0
+      for: 1m
+      labels:
+        severity: 'critical'
+      annotations:
+        summary: "instance: {{ $labels.instance }} down"
+        description: " instaance: {{ $labels.instance }} \n- job: {{ $labels.job }} down."
+        value: "{{ $value }}"
+        instance: "{{ $labels.instance }}"
+
+    - alert: springboot-demo022-down
+      expr: up{job="springboot-demo022"} == 0
+      for: 1m
+      labels:
+        severity: 'critical'
+      annotations:
+        summary: "instance: {{ $labels.instance }} down"
+        description: " instaance: {{ $labels.instance }} \n- job: {{ $labels.job }} down."
+        value: "{{ $value }}"
+        instance: "{{ $labels.instance }}"
