@@ -20,8 +20,8 @@ docker logs
 # 文件夹授权 用于因权限问题导致报错
 chmod -R 777 /app
 
-# 本地访问 http://localhost:8848/
-# 查看 ip 访问 kibana http://192.168.31.151:8848/
+# 本地访问 http://localhost:8848/nacos
+# 查看 ip 访问 nacos http://192.168.31.151:8848/nacos
 ip addr
 
 # 服务下线

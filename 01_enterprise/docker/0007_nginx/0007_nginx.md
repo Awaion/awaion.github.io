@@ -21,7 +21,7 @@ docker logs
 chmod -R 777 /app
 
 # 本地访问 http://localhost:80/
-# 查看 ip 访问 kibana http://192.168.31.151:80/
+# 查看 ip 访问 http://192.168.31.151:80/
 ip addr
 
 # 服务下线

@@ -5,6 +5,8 @@ services:
     image: nacos/nacos-server
     environment:
       - MODE=standalone
+    build:
+      context: ./nacos
     volumes:
       - ./nacos/logs/:/home/nacos/logs
       - ./nacos/conf/application.properties:/home/nacos/conf/application.properties
@@ -14,6 +16,8 @@ services:
       - "9849:9849"
     depends_on:
       - mysql
+    networks:
+      - nacos-mysql
   mysql:
     container_name: mysql
     image: mysql:5.7
@@ -34,3 +38,8 @@ services:
     environment:
       MYSQL_DATABASE: 'test'
       MYSQL_ROOT_PASSWORD: 123456
+    networks:
+      - nacos-mysql
+networks:
+  nacos-mysql:
+    driver: bridge

@@ -1,0 +1,13 @@
+# 基础镜像
+FROM redis
+# author
+MAINTAINER awaion
+
+# 挂载目录
+VOLUME /conf
+# 创建目录
+RUN mkdir -p /conf
+# 指定路径
+WORKDIR /conf
+# 复制conf文件到路径
+COPY ./conf/redis.conf /conf/redis.conf
