@@ -66,7 +66,15 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] 
 apt update
 
 # 安装 docker 及相关
-apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+# 启动 docker
+systemctl start docker
+systemctl enable docker
+/lib/systemd/systemd-sysv-install enable docker
+
+# 验证 docker 能否正常拉取
+docker run hello-world
 
 # 安装 python3 python3-pip
 apt install python3 python3-pip -y
@@ -104,4 +112,7 @@ cat /etc/docker/daemon.json
 systemctl daemon-reload
 systemctl restart docker
 docker info
+
+# 验证 docker 能否正常拉取
+docker run hello-world
 ```
