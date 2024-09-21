@@ -98,3 +98,25 @@ Terminal=false
 Type=Application
 Categories=Development;IDE;
 EOF
+
+# 若依
+docker pull openjdk:8-jre
+mvn package
+cd ruoyi-ui
+# 打包正式环境
+npm run build:prod
+# 打包预发布环境
+npm run build:stage
+cd docker
+./copy.sh
+
+初始化sql
+
+# 启动基础环境（必须）
+./deploy.sh base
+
+# 启动程序模块（必须）
+./deploy.sh modules
+
+# 关闭所有环境/模块
+./deploy.sh stop
