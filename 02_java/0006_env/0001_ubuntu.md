@@ -82,11 +82,20 @@ npm config get registry
 
 # 更新 npm
 npm install -g n
+export N_NODE_MIRROR=https://mirrors.cloud.tencent.com/nodejs-release
 n stable
 hash -r
 
-# 安装 vue
-npm install vue-cli-service
+# npm 可选命令
+npm install -g @vue/cli
+npm install @vue/cli-plugin-babel
+npm install @vue/cli-plugin-eslint
+npm install compression-webpack-plugin --save-dev
+n latest
+npm install webpack@latest --save-dev
+rm -rf node_modules
+npm init -y
+npm install -g
 
 tee /opt/idea-IU-242.21829.142/bin/idea.desktop <<-'EOF'
 [Desktop Entry]
@@ -107,6 +116,7 @@ cd ruoyi-ui
 npm run build:prod
 # 打包预发布环境
 npm run build:stage
+npm install vue-cli-service
 cd docker
 ./copy.sh
 
@@ -120,3 +130,7 @@ cd docker
 
 # 关闭所有环境/模块
 ./deploy.sh stop
+
+networks:
+    ruoyi_network:
+        driver: bridge
