@@ -45,9 +45,10 @@ ideaIU-2024.2.1.tar.gz
 
 # 解压
 tar -zxvf /app/software/ideaIU-2024.2.1.tar.gz -C /app/
+tar -zxvf /app/software/ideaIU-2024.2.1-aarch64.tar.gz -C /app/
 
 # 文件夹改名
-mv idea-IU-242.21829.142 idea
+mv idea-IU-242.21829.142 idea-2024
 
 # 授予执行权限
 chmod +x idea.sh
