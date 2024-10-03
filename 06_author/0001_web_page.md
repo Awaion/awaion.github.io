@@ -72,6 +72,7 @@
 - github torvalds: [https://github.com/torvalds](https://github.com/torvalds)
 - yupi: [https://www.codefather.cn/](https://www.codefather.cn/)
 - aliyun docker ce: [https://developer.aliyun.com/mirror/docker-ce](https://developer.aliyun.com/mirror/docker-ce)
+- ps https://www.yuque.com/books/share/13d0abeb-e061-459a-9ae4-8a8a3ea8f681/sw9d1v
 
 ## 插件
 
